@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!--
+        Code by La Quí Cường
+        NumberPhone: 0782887860
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ | iwt.io.vn</title>
+    <!--Title icon-->
+    <link rel="shortcut icon" href="./media/img/logo.png" type="image/x-icon">
+    <!--Link library-->
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/49c44928f4.js" crossorigin="anonymous"></script>
+    <!--CSS3-->
+    <link rel="stylesheet" href="./code/css/base.css">
+    <link rel="stylesheet" href="./code/css/it.css">
+    <link rel="stylesheet" href="./code/css/function.css">
+    <!--Jquery-->
+    <script src="./lib/node_modules/jquery/dist/jquery.min.js"></script>
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!--Keywords seo-->
+    <!--Chỗ này dùng để thêm từ khóa tìm kiếm-->
+</head>
+<body>
+    <!--Fixed nav-->
+    <div class="itNav" style="position: sticky; top: 0; z-index: 1;">
+        <div class="item">
+            <div class="itLogo">
+                <img src="./media/img/logo.png" alt="Image not found.">
+            </div>
+            <div class="itTitle">
+                <h3><a href="">iwanto</a></h3>
+            </div>
+        </div>
+        <form action="" class="item" method="get">
+            <input type="text" name="php_search" value="" placeholder="Bạn cần tìm gì?" required>
+            <button class="itBtn submit" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="item">
+            <div class="active" title="Trang chủ" onclick="app();"><i class="fas fa-home"></i></div>
+            <div title="Đăng tải"><i class="fas fa-upload"></i></div>
+            <div title="Quyên góp"><i class="fas fa-donate"></i></div>
+            <div title="Lưu trữ"><i class="fas fa-archive"></i></div>
+            <div title="Cá nhân" onclick="app_CallSever_user();"><i class="fas fa-user-circle"></i></div>
+        </div>
+    </div>
+    <!--Content in here-->
+    <main>
+        <div class="item" id="app_CallSever_user" data-title="Thông tin người dùng.">
+            <!--Inject-->
+        </div>
+        <div class="item" id="app">
+            <!--Nội dung được inject vào-->
+        </div>
+        <div class="item" id="app_CallSever_menu" data-title="Các tiện ích mở rộng.">
+        <!--Nội dung được inject vào-->
+        </div>
+    </main>
+    <!--Web the end-->
+    <footer>
+        <a href="https://www.facebook.com/lqc.rou/" target="_blank">
+            Mã bởi La Quí Cường [Ba Chúc, Tri Tôn, An Giang]
+        </a>
+    </footer>
+</body>
+    <!--Javascript-->
+    <script src="./code/js/inject-content.js"></script>
+    <script src="./code/js/script.js"></script>
+    <script>$(function(){root()});</script>
+</html>

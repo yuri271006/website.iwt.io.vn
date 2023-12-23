@@ -1,0 +1,24 @@
+//Var
+$color: #218BDF;
+$hover: #F0F2F5;
+$sm: 5px;
+$md: 10px;
+$lg: 15px;
+//Hàm
+@mixin avt($x, $y){
+    border: 1px solid silver; 
+    border-radius: 50%;
+    cursor: pointer;
+    width: $x;
+    height: $y;
+}
+@mixin under-light($x, $y, $z){
+    width: $x;
+    max-width: 50px;
+    height: 1.5px;
+    margin-top: $y;
+    border: 1px solid $z;
+    border-radius: 10px;
+    background-color: $z;
+}
+//Code

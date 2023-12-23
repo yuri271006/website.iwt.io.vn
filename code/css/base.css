@@ -1,0 +1,232 @@
+:root{
+    --ex-color: #218adfe5;
+    --main-color: #218BDF;
+    --main-bd-radius: 10px; 
+    --main-bd-radius-sm: 5px;
+    --main-avt-sm: 56px;
+    --main-bg-color: #F0F2F5;
+    --ex-bg-color: white;
+    --ex-mr-small: 5px;
+    --ex-boxSh-sm: 0 .2rem 0.75rem rgba(0,0,0,.15);
+    --ex-boxSh: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+body{
+    margin: 0;
+    background-color: var(--main-bg-color);
+    -webkit-user-select: none !important;
+    -moz-user-select: -moz-none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+.itNav{
+    display: flex;
+    background-color: var(--ex-bg-color);
+    box-shadow: var(--ex-boxSh-sm);
+    padding: 2px 1px 0px 1px;
+    flex-wrap: wrap;
+}
+.itNav .item{
+    display: flex;
+    margin: 0px 5px 0px 5px;
+}
+/*Chia layout*/
+/* .itNav .item:last-child{
+    display: none;
+} */
+.itNav .item:first-child{
+    flex: 2;
+}
+.itNav .item:nth-last-child(2){
+    flex: 8;
+}
+/*Layout cho nav khi màn hình nhỏ{*/
+.itNav .item:last-child{
+    width: 100%;
+    margin: 0;
+    margin-top: 4px;
+    display: flex;
+}
+.itNav .item:last-child div{
+    flex: 1;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    color: silver;
+    cursor: pointer;
+    border-top: 1px solid silver;
+}
+/*Active*/
+.itNav .item:last-child .active{
+    color: #218BDF;
+    border-bottom: 2.3px solid var(--main-color);
+}
+.itNav .item:last-child div:hover{
+    background-color: var(--main-bg-color);
+    border-bottom: 2.3px solid var(--main-color);
+    color: #218BDF;
+}
+.itNav .item:last-child div:active{
+    opacity: 60%;
+}
+/*Loại bỏ margin thừa ở hai phần tử đầu*/
+.itNav .item:first-child{
+    margin-right: 0;
+    margin-left: 0;
+}
+.itNav .item:last-child{
+    margin-left: 7;
+    margin-right: 0;
+}
+/*Phần tiêu đều và logo*/
+.itNav .item .itLogo img{
+    width: var(--main-avt-sm);
+    height: var(--main-avt-sm);
+    margin-top: 3px;
+}
+.itNav .item .itTitle h3 a{
+    text-transform: capitalize;
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 22px;
+    font-family: sans-serif;
+    /* font-style: italic; */
+}
+.itNav .item:first-child div:last-child{
+    margin: 0px 2px 0px 3px;
+}
+/*Phần searchbox*/
+.itNav form{
+    display: flex;
+    align-items: center;
+}
+.itNav form input{
+    border: 1px solid var(--main-color);
+    border-radius: var(--main-bd-radius);
+    height: 45%;
+    width: 68%;
+    margin-right: 2.5px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.itNav form input:focus{
+    outline: none;
+    background-color: aliceblue;
+}
+.itNav form button{
+    margin-left: 2.5px;
+    height: 45%;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: white;
+    border: 1px solid var(--main-color);
+    background-color: var(--ex-color);
+    cursor: pointer;
+    border-radius: var(--main-bd-radius-sm);
+}
+.itNav form button:focus{
+    opacity: 60%;
+}
+.itNav form button:hover{
+    box-shadow: var(--ex-boxSh-sm);
+    background-color: var(--main-color);
+}
+/*Thích ứng phần nav cho các dạng màn hình*/
+@media (min-width: 800px){
+    .itNav .item div::after{
+        content: attr(title);
+        font-family: sans-serif;
+        margin-left: 5px;
+        /* font-weight: bold; */
+    }
+    .itNav .item:first-child{
+        align-items: center;
+    }
+    .itNav .item .itTitle{
+        display: flex;
+        align-items: center;
+        /* padding-top: 10px; */
+        
+    }
+    /* .itNav .item div i{
+        font-size: initial;
+    } */
+}
+@media (min-width: 1000px){
+    .itNav .item div::after{
+        content: unset;
+    }
+    .itNav{
+        flex-wrap: nowrap;
+    }
+    .itNav .item:last-child div{
+        border: 0;
+        border-radius: 10px 10px 0px 0px;
+        font-size: 22px;
+    }
+    .itNav .item:first-child{
+        flex: 1;
+    }
+    .itNav .item:nth-last-child(2){
+        flex: 4;
+        justify-content: center;
+    }
+    .itNav .item:last-child{
+        flex: 5;
+        margin: 0;
+    }
+}
+@media (min-width: 1400px){
+    .itNav{
+        height: 62px;
+        padding-top: 0;
+    }
+    .itNav .item div::after{
+        content: attr(title);
+        font-size: initial;
+    }
+    .itNav .item:last-child div{
+        border-radius: 0;
+    }
+    .itNav .item:nth-last-child(2){
+        flex: 3;
+    }
+    .itNav .item:last-child{
+        flex: 6;
+    }
+}
+@media (min-width: 1700px){
+    .itNav{
+        padding-top: 0;
+    }
+    .itNav .item:nth-last-child(2){
+        flex: 4;
+    }
+    .itNav .item:first-child{
+        justify-content: flex-end;
+    }
+    /* .itNav .item:last-child div i{
+        display: none;
+    } */
+    .itNav .item:last-child div::after{
+        font-size: initial;
+        /* color: silver; */
+    }
+    .itNav .item:last-child div{
+        border-bottom: 2.2px solid white;
+        /* transition-duration: 0.6s; */
+    }
+    .itNav .item:last-child div:hover{
+        /* background-color: unset; */
+        /* translate: 0 10px; */
+        /* transition-duration: 0.4s; */
+        border: 0px;
+        border-bottom: 2.2px solid var(--ex-color);
+        /* border: 1px solid var(--main-color); */
+        /* border-radius: var(--main-bd-radius-sm); */
+    }
+    /*Thêm sửa đổi active hover*/
+    .active{
+        border: 0px !important;
+        border-bottom: 2.2px solid var(--ex-color) !important;
+    }
+}
+/*Thêm file css*/
