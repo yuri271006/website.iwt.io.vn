@@ -1,1 +1,1 @@
-.FuncAlert{background-color:#218BDF;border-radius:10px;width:fit-content}.FuncAlert p{color:white;font-weight:bold;padding:15px}
+.FuncBtn{background-color:#218BDF;border-radius:10px;width:fit-content;cursor:pointer}.FuncBtn p{color:white;padding:10px;font-family:sans-serif;font-size:15px;font-weight:bold}.FuncBtn:hover{background-color:#218adfcc}.FuncBtn:active{opacity:60%}

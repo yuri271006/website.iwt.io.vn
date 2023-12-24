@@ -22,13 +22,17 @@ $lg: 15px;
     background-color: $z;
 }
 //Code
-.FuncAlert{
+.FuncBtn{
     background-color: $color; //#F0F2F5;
     border-radius: $md;
     width: fit-content;
+    cursor: pointer;
     p{    
         color: white;
+        padding: $md;
+        font-family: sans-serif;
+        font-size: 15px;
         font-weight: bold;
-        padding: $lg;
     }
 }
+.FuncBtn:hover{background-color: #218adfcc;} .FuncBtn:active{opacity: 60%;}
