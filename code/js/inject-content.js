@@ -1,6 +1,9 @@
 function app(){
     $("#app").load("./code/php/view.php");
 }
+$("#CallApp").click(()=>{
+    location.reload();
+});
 function app_CallSever_user(){
     $("#app_CallSever_user").load("./code/php/user.php");
     $("#app_CallSever_user").css({"opacity": "40%"});

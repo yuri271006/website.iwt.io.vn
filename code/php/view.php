@@ -2,6 +2,7 @@
 <div class="app-item-fixed">
     <b><i class="fas fa-globe"></i> Connect and Share</b>
     <div class="canvas"></div>
+    <span class ="itSpan5viewphp" style="align-self: end; margin-right: 10px; margin-top: 5px;">Đã nhập <itShow>0</itShow>/1000 kí tự</span>
     <textarea id="post" maxlength="1000" minlength="1" placeholder="Bạn có muốn viết chút gì không?"></textarea>
     <div>
         <p data-toggle="true" data-act="Xóa bài đăng" data-dis="Tạo bài đăng">Tạo bài đăng</p>
