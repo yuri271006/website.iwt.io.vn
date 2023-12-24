@@ -1,6 +1,6 @@
 <!--Khung cố định -->
 <div class="app-item-fixed">
-    <b><i class="fas fa-globe"></i> Connect and Share</b>
+    <b><i class="fas fa-globe"></i> <itText CallText='qwe'>Connect and Share</itText></b>
     <div class="canvas"></div>
     <span class ="itSpan5viewphp" style="align-self: end; margin-right: 10px; margin-top: 5px;">Đã nhập <itShow>0</itShow>/1000 kí tự</span>
     <textarea id="post" maxlength="1000" minlength="1" placeholder="Bạn có muốn viết chút gì không?"></textarea>
@@ -32,7 +32,7 @@
     <div class="app-item-open">
         <div class="choose"><i class="far fa-thumbs-up"></i> <span title="Thích" data="0"></span></div>
         <div class="choose"><i class="far fa-comment"></i> <span title="Bình luận" data="0"></span></div>
-        <div class="choose"><i class="far fa-eye"></i> <span title="Xem thêm" data="0"></span></div>
+        <div class="choose"><i class="far fa-eye"></i> <span title="Xem" data="0"></span></div>
     </div>
 </div>
 <!--Kết thúc một hiển thị-->
@@ -59,7 +59,7 @@
     <div class="app-item-open">
         <div class="choose"><i class="far fa-thumbs-up"></i> <span title="Thích" data="0"></span></div>
         <div class="choose"><i class="far fa-comment"></i> <span title="Bình luận" data="0"></span></div>
-        <div class="choose"><i class="far fa-eye"></i> <span title="Xem thêm" data="0"></span></div>
+        <div class="choose"><i class="far fa-eye"></i> <span title="Xem" data="0"></span></div>
     </div>
 </div>
 <!--Kết thúc một hiển thị-->

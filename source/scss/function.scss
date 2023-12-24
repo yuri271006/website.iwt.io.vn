@@ -22,3 +22,13 @@ $lg: 15px;
     background-color: $z;
 }
 //Code
+.FuncAlert{
+    background-color: $color; //#F0F2F5;
+    border-radius: $md;
+    width: fit-content;
+    p{    
+        color: white;
+        font-weight: bold;
+        padding: $lg;
+    }
+}

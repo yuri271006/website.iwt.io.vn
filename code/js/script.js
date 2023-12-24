@@ -1,4 +1,16 @@
 function root(){
+    //root.call
+    {
+        $("[CallPage='./page/user/index.php']").click(()=>{
+            $("#app").load("./page/user/index.php");
+            $("#app").css({"opacity" : "60%"});
+            setTimeout(()=>{$("#app").css({"opacity" : "100%"});}, 400)
+            $("#CallApp").removeClass("active");
+            $("[CallPage='./page/user/index.php']").addClass("active");
+            // $("itText[CallText='qwe']").text("Trang cá nhân");
+            // window.location="./page/user/index.php";
+        })
+    }
     //root.load
     {
         $(window).scroll(function(){
